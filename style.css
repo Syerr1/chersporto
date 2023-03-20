@@ -1,0 +1,299 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: georgia;
+  background-color: white;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: #6f8111;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header .logo {
+  width: 360px;
+  margin-top: 15px;
+  margin-left: 10px;
+  color: white;
+  letter-spacing: 0.25cm;
+}
+
+header .header-left h1 {
+  float: left;
+}
+
+header .header-left a {
+  float: left;
+  line-height: 65px;
+  margin-left: 30px;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  padding: 0 5px;
+  transition: all 0.5s;
+}
+
+.header-leftin{
+  float: right;
+  margin-right: -25px;
+}
+
+.header-leftin a{
+  float: left;
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  transition: all 0.5s;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+header .header-leftin a:hover {
+  background-color: #cced1d;
+}
+
+header .underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #eff9bb;
+}
+
+header .underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #cced1d;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+header .underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+.fa{
+  margin-right: 5px;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-size: cover;
+  color: black;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  font-size: 75px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.top-wrapper h1 span{
+  color: #F2921D;
+  font-weight: 800;
+  font-size: 75px;
+}
+
+.top-wraper h2{
+  font-weight: 100;
+  font-style: italic;
+}
+
+.top-wrapper .imeg{
+  height: 200px;
+  width: 200px;
+}
+
+.heading{
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.about-wrapper p{
+  margin-top: 0px;
+  color: rgb(94, 92, 92);
+}
+
+.about-wrapper{
+background: #F1F1F1;
+text-align: center;
+height: 400px;
+}
+
+.about-wrapper .container{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+  justify-content: space-between;
+	align-items: center;
+  margin-bottom: 100px;
+}
+
+.main-content{
+	text-align: center;
+}
+
+
+.main-content .container{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+  justify-content: space-between;
+	align-items: center;
+	
+}
+
+.content-item{
+	position: relative;
+	background: #fff; 
+	height: 350px;
+	justify-content: center;
+	align-items: center;
+  float: left;
+  padding-bottom: 20px;
+}
+
+.content-item img{
+	max-width: 100%;
+  margin-top: 0px;
+  margin-right: 5px;
+  height: 260px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+
+/* FORM AREA */
+.main {
+  height: 500px;
+  background-color: #F1F1F1;
+}
+
+li {
+    list-style: none;
+}
+  
+.section-title {
+  border-bottom: 2px solid #dee7ec;
+  font-size: 24px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+  text-align: center;
+  }
+  
+.section-title a {
+  font-size: 24px;
+  color: #2da154;
+}
+  
+a {
+  text-decoration: none;
+}
+  
+.contact-form {
+  padding-top: 5%;
+}
+
+.form ul{
+  padding: 0px;
+}
+
+.form{
+  padding-left: 200px ;
+  padding-right: 200px;
+}
+
+.email {
+  width: 100%;
+  padding: 10px 10px;
+  box-sizing: border-box;
+    /* float: right; */
+  margin-bottom: 10px;
+  border: 1px solid #dee7ec;
+  }
+  
+.pesan{
+  width: 100%;
+  height: 80px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  /* float: right; */
+  margin-bottom: 10px;
+  border: 1px solid #dee7ec;
+}
+  /* Tambahkan CSS untuk tags <input> dan <textarea> */
+  
+.submit{
+  padding: 12px 60px;
+  color: white;
+  opacity: 0.8;
+  border-radius: 4px;
+  background-color: #276464be;
+  text-align: center;
+  width: 35%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  outline: none;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+
+.footer{
+  height: 200px;
+  color: white;
+  padding: 40px;
+  background-color: #6f8111;
+}
+
+.footer-logo{
+  float: left;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: .2cm;
+}
+
+.footer-list {
+  float:right;
+}
+
+.footer-list li{
+  padding-bottom: 25px;
+}
+
+
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+}
